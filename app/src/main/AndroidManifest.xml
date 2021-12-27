@@ -10,6 +10,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.HUMASPOLRESLANDAK">
         <activity
+            android:name=".EditActivity"
+            android:exported="false" />
+        <activity
+            android:name=".InsertActivity"
+            android:exported="false" />
+        <activity
             android:name=".MainActivity"
             android:exported="true">
             <intent-filter>
