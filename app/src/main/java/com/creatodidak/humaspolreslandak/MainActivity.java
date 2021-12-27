@@ -52,8 +52,8 @@ public class MainActivity extends AppCompatActivity {
     }
 
     public void refresh() {
-        Call<GetLaporan> kontakCall = mApiInterface.getLaporan();
-        kontakCall.enqueue(new Callback<GetLaporan>() {
+        Call<GetLaporan> laporanCall = mApiInterface.getLaporan();
+        laporanCall.enqueue(new Callback<GetLaporan>() {
             @Override
             public void onResponse(Call<GetLaporan> call, Response<GetLaporan>
                     response) {

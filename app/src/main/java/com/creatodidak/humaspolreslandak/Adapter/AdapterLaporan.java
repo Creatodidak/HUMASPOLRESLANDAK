@@ -44,10 +44,10 @@ public class AdapterLaporan extends RecyclerView.Adapter<AdapterLaporan.MyViewHo
             @Override
             public void onClick(View view) {
                 Intent mIntent = new Intent(view.getContext(), EditActivity.class);
-                mIntent.putExtra("Id", mLaporanList.get(position).getId());
-                mIntent.putExtra("Laporan", mLaporanList.get(position).getLaporan());
-                mIntent.putExtra("Personil", mLaporanList.get(position).getPersonil());
-                mIntent.putExtra("Satuan", mLaporanList.get(position).getSatuan());
+                mIntent.putExtra("Id", mLaporanList.get(holder.getAdapterPosition()).getId());
+                mIntent.putExtra("Laporan", mLaporanList.get(holder.getAdapterPosition()).getLaporan());
+                mIntent.putExtra("Personil", mLaporanList.get(holder.getAdapterPosition()).getPersonil());
+                mIntent.putExtra("Satuan", mLaporanList.get(holder.getAdapterPosition()).getSatuan());
                 view.getContext().startActivity(mIntent);
             }
         });
